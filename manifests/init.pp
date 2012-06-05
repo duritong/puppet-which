@@ -9,7 +9,7 @@
 # the Free Software Foundation.
 #
 class which {
-  case $operatingsystem {
+  case $::operatingsystem {
     # currently we only have missing which on centos boxes
     centos: { include which::base }
   }
